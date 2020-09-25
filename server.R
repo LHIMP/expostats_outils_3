@@ -6,47 +6,44 @@ library(extrafont)
 library(png)
 library(ggimage)
 library(gridExtra)
+library(here)
 
 ######################     scripts to source
 
 
-setwd("./scripts")
-
 ##### determinant specific functions
 
 
-source("Determinant/Data formatting functions_D.R")
+source(here("scripts", "Determinant", "Data formatting functions_D.R"))
 
-source("Determinant/Bayesian engine functions_D.R")
+source(here("scripts", "Determinant", "Bayesian engine functions_D.R"))
 
-source("Determinant/Descriptive graphs functions_D.R")
+source(here("scripts", "Determinant", "Descriptive graphs functions_D.R"))
 
-source("Determinant/Numerical output functions_D.R")
+source(here("scripts", "Determinant", "Numerical output functions_D.R"))
 
-source("Determinant/Main graph functions_D.R")
+source(here("scripts", "Determinant", "Main graph functions_D.R"))
 
 #### common functions
 
 
-source("Common/Simple censored imputation functions.R")
+source(here("scripts", "Common", "Simple censored imputation functions.R"))
 
-source("Common/Descriptive numerical output functions.R")
+source(here("scripts", "Common", "Descriptive numerical output functions.R"))
 
-source("Common/Descriptive graphs functions.R")
+source(here("scripts", "Common", "Descriptive graphs functions.R"))
 
-source("Common/script density comparison.R")
+source(here("scripts", "Common", "script density comparison.R"))
 
-source("Common/Numerical output functions.R")
+source(here("scripts", "Common", "Numerical output functions.R"))
 
-source("Common/Main graph functions.R")
+source(here("scripts", "Common", "Main graph functions.R"))
 
-source("Common/Bayesian engine functions.R")
-
-setwd("..")
+source(here("scripts", "Common", "Bayesian engine functions.R"))
 
 ###########loading the simulation data---------------------------
 
-data.example <-read.csv(file="./data/data.example.csv")
+data.example <-read.csv(file=here("data", "data.example.csv"))
 
 
 ##########SHINY STUFF

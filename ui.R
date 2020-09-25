@@ -16,6 +16,7 @@ library(shinyBS)
 library(xlsx)
 library(shinycssloaders)
 library(colourpicker)
+library(here)
 
 ###### CSS
 
@@ -51,7 +52,7 @@ tt <- function(param, txt="[0 &lt; valid &le; 100]") {
 
 inputWidth <- "110px"
 
-source("langParams.R")
+source(here("langParams.R"))
 
 shinyUI(bootstrapPage(
   singleton(tags$head(tags$script(src = "textarea.js"))),
