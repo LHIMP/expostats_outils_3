@@ -406,6 +406,7 @@ shinyServer(function(input, output, session) {
                    gett('res.desc.13')
                  )
                
+							colnames(result) <- c(gett('parameter'), c('value'))
                return(result)
             
           },include.rownames=FALSE)
