@@ -34,7 +34,6 @@ div.colour-inp > div > label { font-size: 12px }
 .va-mid { vertical-align: middle !important }
 div.float-l { float: left !important }
 div.float-r { float: right !important }
-#fieldset { border: 1px dotted grey !important; padding: 5px !important }
 fieldset > legend { font-size: 14px !important; margin-bottom: 2px !important }
 div.fieldset-body { display: none }
 legend.toggle-personnalisation > * { cursor: pointer; font-size: 15px !important; font-style: italic }
@@ -52,7 +51,7 @@ tt <- function(param, txt="[0 &lt; valid &le; 100]") {
 
 inputWidth <- "110px"
 
-source(here("langParams.R"))
+source("langParams.R")
 
 shinyUI(bootstrapPage(
   singleton(tags$head(tags$script(src = "textarea.js"))),
